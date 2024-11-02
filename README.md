@@ -33,7 +33,7 @@ namespace Geolocator
         static async Task Main(string[] args)
         {
             Console.Title = "GeoLocator";
-            Console.Write("Zadejte IP Adresu: ");
+            Console.Write("Enter IP address: ");
             string ip = Console.ReadLine();
             string url = $"https://ipinfo.io/{ip}/json";
 
@@ -44,20 +44,20 @@ namespace Geolocator
                     HttpResponseMessage response = await client.GetAsync(url);
                     response.EnsureSuccessStatusCode();
 
-                    Console.WriteLine("[ + ] Požadavek Úspěšně Udělán");
+                    Console.WriteLine("[ + ] Request successfully made.");
 
                     string ResponseData = await response.Content.ReadAsStringAsync();
                     Data IpInfo = JsonConvert.DeserializeObject<Data>(ResponseData);
 
                     Console.Clear();
-                    Console.WriteLine($"[ / ] Země: {IpInfo.country}");
-                    Console.WriteLine($"[ / ] Město: {IpInfo.city}");
-                    Console.WriteLine($"[ / ] Souřadnice: {IpInfo.loc}");
-                    Console.WriteLine($"[ / ] Poštovní směrovací číslo: {IpInfo.postal}");
+                    Console.WriteLine($"[ / ] Country: {IpInfo.country}");
+                    Console.WriteLine($"[ / ] City: {IpInfo.city}");
+                    Console.WriteLine($"[ / ] Coordinates: {IpInfo.loc}");
+                    Console.WriteLine($"[ / ] Postal code: {IpInfo.postal}");
                     Console.WriteLine($"[ / ] ASN: {IpInfo.org}");
-                    Console.WriteLine($"[ / ] Časová zóna: {IpInfo.timezone}");
+                    Console.WriteLine($"[ / ] Time Zone: {IpInfo.timezone}");
 
-                    await Task.Delay(8000); // Počká 8 sekund
+                    await Task.Delay(8000); // I had trouble making it to NOT quit program instantly, I think you can remove "await Task.Delay(8000)" if you want.
                     Console.ReadKey();
                 }
                 catch (HttpRequestException ex)
