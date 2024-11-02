@@ -1,0 +1,10 @@
+C:\Users\miska\source\repos\Geolocator\Geolocator\bin\Debug\Geolocator.exe.config
+C:\Users\miska\source\repos\Geolocator\Geolocator\bin\Debug\Geolocator.exe
+C:\Users\miska\source\repos\Geolocator\Geolocator\bin\Debug\Geolocator.pdb
+C:\Users\miska\source\repos\Geolocator\Geolocator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\miska\source\repos\Geolocator\Geolocator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\miska\source\repos\Geolocator\Geolocator\obj\Debug\Geolocator.csproj.AssemblyReference.cache
+C:\Users\miska\source\repos\Geolocator\Geolocator\obj\Debug\Geolocator.csproj.CoreCompileInputs.cache
+C:\Users\miska\source\repos\Geolocator\Geolocator\obj\Debug\Geolocator.csproj.Up2Date
+C:\Users\miska\source\repos\Geolocator\Geolocator\obj\Debug\Geolocator.exe
+C:\Users\miska\source\repos\Geolocator\Geolocator\obj\Debug\Geolocator.pdb
