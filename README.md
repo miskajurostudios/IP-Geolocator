@@ -1,7 +1,7 @@
 # IP-Geolocator
 Geolocate IP address using C# and ipinfo.io
 
-Source Code for this is a Visual Studio!
+###### (Source Code in 'Geolocate' folder are Visual Studio 2022 project files)
 
 This Geolocator is using ipinfo.io to get information about IP address!
 (Made in Visual Studio 2022)
